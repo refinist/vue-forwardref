@@ -1,18 +1,18 @@
 {
-  "name": "vue-forwardref",
+  "name": "vue-use-forward-ref",
   "type": "module",
   "version": "0.0.0",
   "packageManager": "pnpm@10.30.3",
   "description": "A lightweight Vue 3 composable to forward component ref and merge child exposed API onto parent instance",
   "author": "REFINIST",
   "license": "MIT",
-  "homepage": "https://github.com/refinist/vue-forwardref#readme",
+  "homepage": "https://github.com/refinist/vue-use-forward-ref#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/refinist/vue-forwardref.git"
+    "url": "git+https://github.com/refinist/vue-use-forward-ref.git"
   },
   "bugs": {
-    "url": "https://github.com/refinist/vue-forwardref/issues"
+    "url": "https://github.com/refinist/vue-use-forward-ref/issues"
   },
   "keywords": [
     "vue",

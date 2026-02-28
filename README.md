@@ -1,6 +1,6 @@
-# vue-forwardref
+# vue-use-forward-ref
 
-[![npm](https://img.shields.io/npm/v/vue-forwardref.svg?colorA=42b883&colorB=35495e)](https://npmjs.com/package/vue-forwardref) [![Unit Test](https://img.shields.io/github/actions/workflow/status/refinist/vue-forwardref/unit-test.yml?colorA=42b883&colorB=35495e&label=Unit%20Test)](https://github.com/refinist/vue-forwardref/actions/workflows/unit-test.yml) [![codecov](https://img.shields.io/codecov/c/github/refinist/vue-forwardref?colorA=42b883&colorB=35495e)](https://codecov.io/github/refinist/vue-forwardref) [![size](https://img.badgesize.io/https://unpkg.com/vue-forwardref?compression=gzip&labelColor=42b883&color=35495e)](https://unpkg.com/vue-forwardref)
+[![npm](https://img.shields.io/npm/v/vue-use-forward-ref.svg?colorA=42b883&colorB=35495e)](https://npmjs.com/package/vue-use-forward-ref) [![Unit Test](https://img.shields.io/github/actions/workflow/status/refinist/vue-use-forward-ref/unit-test.yml?colorA=42b883&colorB=35495e&label=Unit%20Test)](https://github.com/refinist/vue-use-forward-ref/actions/workflows/unit-test.yml) [![codecov](https://img.shields.io/codecov/c/github/refinist/vue-use-forward-ref?colorA=42b883&colorB=35495e)](https://codecov.io/github/refinist/vue-use-forward-ref) [![size](https://img.badgesize.io/https://unpkg.com/vue-use-forward-ref?compression=gzip&labelColor=42b883&color=35495e)](https://unpkg.com/vue-use-forward-ref)
 
 A lightweight Vue 3 composable to forward component ref and merge the child's exposed API onto the parent instance. Parent's ref then exposes both the child's `expose()` and optional extra fields in one place.
 
@@ -15,16 +15,16 @@ A lightweight Vue 3 composable to forward component ref and merge the child's ex
 
 ```bash
 # npm
-npm install vue-forwardref
+npm install vue-use-forward-ref
 
 # yarn
-yarn add vue-forwardref
+yarn add vue-use-forward-ref
 
 # pnpm
-pnpm add vue-forwardref
+pnpm add vue-use-forward-ref
 
 # bun
-bun add vue-forwardref
+bun add vue-use-forward-ref
 ```
 
 ## 🚀 Basic Usage
@@ -40,7 +40,7 @@ Use `forwardRef` as the child's `ref`. The parent's ref (e.g. from a grandparent
 
 <script setup lang="ts">
 import { ref } from 'vue';
-import { useForwardRef } from 'vue-forwardref';
+import { useForwardRef } from 'vue-use-forward-ref';
 import Child from './Child.vue';
 
 const { forwardRef } = useForwardRef();
@@ -60,7 +60,7 @@ You can merge additional fields onto the exposed object so the parent ref sees b
 
 <script setup lang="ts">
 import { ref } from 'vue';
-import { useForwardRef } from 'vue-forwardref';
+import { useForwardRef } from 'vue-use-forward-ref';
 import Child from './Child.vue';
 
 const count = ref(0);
